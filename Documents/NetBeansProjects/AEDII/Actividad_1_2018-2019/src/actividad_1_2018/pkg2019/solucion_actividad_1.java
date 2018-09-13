@@ -33,5 +33,22 @@ public class solucion_actividad_1 {
 		else return cuadrado(n-1) + 2 * n - 1; 	
 	}
     
+        //  EJERCICIO 3
+        public int sumarDigitos (int n){
+            if(n < 10){
+                return n;
+            }
+            else{
+                return (n%10) + sumarDigitos(n/10);
+            }
+        }
+        
+        //ejercicio 4
+	public static int euclides (int n1, int n2)
+	{
+		if (n1 == n2) return n1;
+		else if (n1 > n2) return euclides(n1-n2, n2);
+		else return euclides (n1, n2-n1);
+	}
     
 }
