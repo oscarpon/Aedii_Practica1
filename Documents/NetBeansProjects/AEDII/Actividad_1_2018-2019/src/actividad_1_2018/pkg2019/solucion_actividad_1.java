@@ -53,7 +53,7 @@ public class solucion_actividad_1 {
 		else return euclides (n1, n2-n1);
 	}
         
-        //Ejercicio 5
+       //Ejercicio 5
         public static boolean palindromo (String cadena){
             if (cadena.length() == 0 || cadena.length() == 1){
                 return true;
@@ -139,5 +139,4 @@ public class solucion_actividad_1 {
             }
         }
         
-    
 }
