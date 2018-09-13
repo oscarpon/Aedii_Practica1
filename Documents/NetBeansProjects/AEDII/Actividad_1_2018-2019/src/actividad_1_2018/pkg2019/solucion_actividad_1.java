@@ -5,6 +5,8 @@
  */
 package actividad_1_2018.pkg2019;
 
+
+import java.util.Stack;
 /**
  *
  * @author oscar
@@ -119,6 +121,21 @@ public class solucion_actividad_1 {
                 else if (array[medio]>elemento)
                         return busquedaBinaria(array, inicio, medio-1, elemento);
                      else return medio;
+            }
+        }
+        
+        //Ejercicio 10
+        public static <E> Stack <E> copiar (Stack<E> pila){
+            Stack<E> toret;
+            if (pila.isEmpty()){
+                return new Stack<>();
+            }
+            else{
+                E elemento = pila.pop();
+                toret = copiar(pila);
+                toret.push(elemento);
+                pila.push(elemento);
+                return toret;
             }
         }
         
