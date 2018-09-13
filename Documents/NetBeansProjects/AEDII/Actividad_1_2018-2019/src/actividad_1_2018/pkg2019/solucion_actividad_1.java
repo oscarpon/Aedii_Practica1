@@ -26,4 +26,12 @@ public class solucion_actividad_1 {
         }
     }
     
+    //EJERCICIO 2
+    	public static int cuadrado (int n)
+	{
+		if (n == 0) return 0;
+		else return cuadrado(n-1) + 2 * n - 1; 	
+	}
+    
+    
 }
