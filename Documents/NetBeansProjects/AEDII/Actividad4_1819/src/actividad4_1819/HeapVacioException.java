@@ -9,6 +9,11 @@ package actividad4_1819;
  *
  * @author oscar
  */
-public class HeapVacioException {
-    
+public class HeapVacioException extends RuntimeException {
+    public HeapVacioException(){
+        super();
+    }
+    public HeapVacioException(String mensaje){
+        super(mensaje);
+    }
 }
